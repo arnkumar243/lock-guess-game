@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Guess the Lock Combo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .lock {
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Welcome to Lock Guess Game</h1>
+        <div id="container">
+            <div id="header">
+                <p id="start" class="btn" >Start</p>
+            </div>
+            <div id="body">
+                <p>If Red then the guessed number is small try increase the value. If Blue then the guessed number is big try decreasing the value.</p>
+                <input id="lock1" class="lock" type="number" min=0 max=9/>
+                <input id="lock2" class="lock" type="number" min=0 max=9/>
+                <input id="lock3" class="lock" type="number" min=0 max=9/>
+                <div>
+                    <p id="openLock" class="btn">Open Lock &#128274</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src='src/index.js'></script>
+    
+</body>
+</html>
